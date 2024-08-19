@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grouped Color Palette</title>
+    <title>Named Color Palette</title>
     <style>
         body {
 			background-color: #161617;
             font-family: Arial, sans-serif;
-            color: #333;
+            color: #aaa;
             max-width: 1390px;
             margin: 0 auto;
             padding: 20px;
@@ -98,24 +98,10 @@
 
     <!-- <h2 onclick="toggleGroup('grays')">Gri ve Nötr Tonlar</h2>-->
     <!-- <div class="group" id="grays"> -->
-        <div class="color-item" onclick="copyToClipboard('gainsboro', this)">
-            <div class="color-square" style="background-color: #dcdcdc;"></div>
-            <div class="color-name">gainsboro</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('lightgray', this)">
-            <div class="color-square" style="background-color: #d3d3d3;"></div>
-            <div class="color-name">lightgray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('silver', this)">
-            <div class="color-square" style="background-color: #c0c0c0;"></div>
-            <div class="color-name">silver</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkgray', this)">
-            <div class="color-square" style="background-color: #a9a9a9;"></div>
-            <div class="color-name">darkgray</div>
+	
+        <div class="color-item" onclick="copyToClipboard('black', this)">
+            <div class="color-square" style="background-color: #000000; border-color: white;"></div>
+            <div class="color-name">black</div>
             <div class="copied-message">Copied!</div>
         </div>
         <div class="color-item" onclick="copyToClipboard('dimgray', this)">
@@ -128,6 +114,26 @@
             <div class="color-name">gray</div>
             <div class="copied-message">Copied!</div>
         </div>
+        <div class="color-item" onclick="copyToClipboard('darkgray', this)">
+            <div class="color-square" style="background-color: #a9a9a9;"></div>
+            <div class="color-name">darkgray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('silver', this)">
+            <div class="color-square" style="background-color: #c0c0c0;"></div>
+            <div class="color-name">silver</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('lightgray', this)">
+            <div class="color-square" style="background-color: #d3d3d3;"></div>
+            <div class="color-name">lightgray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('gainsboro', this)">
+            <div class="color-square" style="background-color: #dcdcdc;"></div>
+            <div class="color-name">gainsboro</div>
+            <div class="copied-message">Copied!</div>
+        </div>
         <div class="color-item" onclick="copyToClipboard('slategray', this)">
             <div class="color-square" style="background-color: #708090;"></div>
             <div class="color-name">slategray</div>
@@ -136,11 +142,6 @@
         <div class="color-item" onclick="copyToClipboard('darkslategray', this)">
             <div class="color-square" style="background-color: #2f4f4f;"></div>
             <div class="color-name">darkslategray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('black', this)">
-            <div class="color-square" style="background-color: #000000;"></div>
-            <div class="color-name">black</div>
             <div class="copied-message">Copied!</div>
         </div>
     <!-- </div> -->
@@ -249,16 +250,6 @@
             <div class="color-name">brown</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('burlywood', this)">
-            <div class="color-square" style="background-color: #deb887;"></div>
-            <div class="color-name">burlywood</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('tan', this)">
-            <div class="color-square" style="background-color: #d2b48c;"></div>
-            <div class="color-name">tan</div>
-            <div class="copied-message">Copied!</div>
-        </div>
     <!-- </div> -->
 	<hr/>
 
@@ -307,6 +298,16 @@
         <div class="color-item" onclick="copyToClipboard('wheat', this)">
             <div class="color-square" style="background-color: #f5deb3;"></div>
             <div class="color-name">wheat</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('burlywood', this)">
+            <div class="color-square" style="background-color: #deb887;"></div>
+            <div class="color-name">burlywood</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('tan', this)">
+            <div class="color-square" style="background-color: #d2b48c;"></div>
+            <div class="color-name">tan</div>
             <div class="copied-message">Copied!</div>
         </div>
     <!-- </div> -->
