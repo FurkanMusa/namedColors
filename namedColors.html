@@ -1,0 +1,1292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Color Palette</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .color-item {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            padding: 10px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            cursor: pointer;
+            transition: transform 0.2s;
+            position: relative;
+        }
+
+        .color-item:hover {
+            transform: scale(1.05);
+        }
+
+        .color-square {
+            width: 40px;
+            height: 40px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            margin-right: 10px;
+        }
+
+        .color-info {
+            flex-grow: 1;
+        }
+
+        .color-name {
+            font-weight: bold;
+            margin-bottom: 4px;
+        }
+
+        .color-hex {
+            font-size: 0.9em;
+            color: #666;
+        }
+
+        .copied-message {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            border-radius: 8px;
+            opacity: 0;
+            transition: opacity 0.1s ease-in, opacity 0.5s ease-out;
+            pointer-events: none;
+        }
+
+        @media (max-width: 600px) {
+            .color-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="color-grid">
+        <div class="color-item" onclick="copyToClipboard('#f0f8ff', this)">
+            <div class="color-square" style="background-color: #f0f8ff;"></div>
+            <div class="color-info">
+                <div class="color-name">aliceblue</div>
+                <div class="color-hex">#f0f8ff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#faebd7', this)">
+            <div class="color-square" style="background-color: #faebd7;"></div>
+            <div class="color-info">
+                <div class="color-name">antiquewhite</div>
+                <div class="color-hex">#faebd7</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00ffff', this)">
+            <div class="color-square" style="background-color: #00ffff;"></div>
+            <div class="color-info">
+                <div class="color-name">aqua</div>
+                <div class="color-hex">#00ffff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#7fffd4', this)">
+            <div class="color-square" style="background-color: #7fffd4;"></div>
+            <div class="color-info">
+                <div class="color-name">aquamarine</div>
+                <div class="color-hex">#7fffd4</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f0ffff', this)">
+            <div class="color-square" style="background-color: #f0ffff;"></div>
+            <div class="color-info">
+                <div class="color-name">azure</div>
+                <div class="color-hex">#f0ffff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f5f5dc', this)">
+            <div class="color-square" style="background-color: #f5f5dc;"></div>
+            <div class="color-info">
+                <div class="color-name">beige</div>
+                <div class="color-hex">#f5f5dc</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffe4c4', this)">
+            <div class="color-square" style="background-color: #ffe4c4;"></div>
+            <div class="color-info">
+                <div class="color-name">bisque</div>
+                <div class="color-hex">#ffe4c4</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#000000', this)">
+            <div class="color-square" style="background-color: #000000;"></div>
+            <div class="color-info">
+                <div class="color-name">black</div>
+                <div class="color-hex">#000000</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffebcd', this)">
+            <div class="color-square" style="background-color: #ffebcd;"></div>
+            <div class="color-info">
+                <div class="color-name">blanchedalmond</div>
+                <div class="color-hex">#ffebcd</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#0000ff', this)">
+            <div class="color-square" style="background-color: #0000ff;"></div>
+            <div class="color-info">
+                <div class="color-name">blue</div>
+                <div class="color-hex">#0000ff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#8a2be2', this)">
+            <div class="color-square" style="background-color: #8a2be2;"></div>
+            <div class="color-info">
+                <div class="color-name">blueviolet</div>
+                <div class="color-hex">#8a2be2</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#a52a2a', this)">
+            <div class="color-square" style="background-color: #a52a2a;"></div>
+            <div class="color-info">
+                <div class="color-name">brown</div>
+                <div class="color-hex">#a52a2a</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#deb887', this)">
+            <div class="color-square" style="background-color: #deb887;"></div>
+            <div class="color-info">
+                <div class="color-name">burlywood</div>
+                <div class="color-hex">#deb887</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#5f9ea0', this)">
+            <div class="color-square" style="background-color: #5f9ea0;"></div>
+            <div class="color-info">
+                <div class="color-name">cadetblue</div>
+                <div class="color-hex">#5f9ea0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#7fff00', this)">
+            <div class="color-square" style="background-color: #7fff00;"></div>
+            <div class="color-info">
+                <div class="color-name">chartreuse</div>
+                <div class="color-hex">#7fff00</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#d2691e', this)">
+            <div class="color-square" style="background-color: #d2691e;"></div>
+            <div class="color-info">
+                <div class="color-name">chocolate</div>
+                <div class="color-hex">#d2691e</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff7f50', this)">
+            <div class="color-square" style="background-color: #ff7f50;"></div>
+            <div class="color-info">
+                <div class="color-name">coral</div>
+                <div class="color-hex">#ff7f50</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#6495ed', this)">
+            <div class="color-square" style="background-color: #6495ed;"></div>
+            <div class="color-info">
+                <div class="color-name">cornflowerblue</div>
+                <div class="color-hex">#6495ed</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fff8dc', this)">
+            <div class="color-square" style="background-color: #fff8dc;"></div>
+            <div class="color-info">
+                <div class="color-name">cornsilk</div>
+                <div class="color-hex">#fff8dc</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#dc143c', this)">
+            <div class="color-square" style="background-color: #dc143c;"></div>
+            <div class="color-info">
+                <div class="color-name">crimson</div>
+                <div class="color-hex">#dc143c</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00ffff', this)">
+            <div class="color-square" style="background-color: #00ffff;"></div>
+            <div class="color-info">
+                <div class="color-name">cyan</div>
+                <div class="color-hex">#00ffff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00008b', this)">
+            <div class="color-square" style="background-color: #00008b;"></div>
+            <div class="color-info">
+                <div class="color-name">darkblue</div>
+                <div class="color-hex">#00008b</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#008b8b', this)">
+            <div class="color-square" style="background-color: #008b8b;"></div>
+            <div class="color-info">
+                <div class="color-name">darkcyan</div>
+                <div class="color-hex">#008b8b</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#b8860b', this)">
+            <div class="color-square" style="background-color: #b8860b;"></div>
+            <div class="color-info">
+                <div class="color-name">darkgoldenrod</div>
+                <div class="color-hex">#b8860b</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#a9a9a9', this)">
+            <div class="color-square" style="background-color: #a9a9a9;"></div>
+            <div class="color-info">
+                <div class="color-name">darkgray</div>
+                <div class="color-hex">#a9a9a9</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#006400', this)">
+            <div class="color-square" style="background-color: #006400;"></div>
+            <div class="color-info">
+                <div class="color-name">darkgreen</div>
+                <div class="color-hex">#006400</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#a9a9a9', this)">
+            <div class="color-square" style="background-color: #a9a9a9;"></div>
+            <div class="color-info">
+                <div class="color-name">darkgrey</div>
+                <div class="color-hex">#a9a9a9</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#bdb76b', this)">
+            <div class="color-square" style="background-color: #bdb76b;"></div>
+            <div class="color-info">
+                <div class="color-name">darkkhaki</div>
+                <div class="color-hex">#bdb76b</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#8b008b', this)">
+            <div class="color-square" style="background-color: #8b008b;"></div>
+            <div class="color-info">
+                <div class="color-name">darkmagenta</div>
+                <div class="color-hex">#8b008b</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#556b2f', this)">
+            <div class="color-square" style="background-color: #556b2f;"></div>
+            <div class="color-info">
+                <div class="color-name">darkolivegreen</div>
+                <div class="color-hex">#556b2f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff8c00', this)">
+            <div class="color-square" style="background-color: #ff8c00;"></div>
+            <div class="color-info">
+                <div class="color-name">darkorange</div>
+                <div class="color-hex">#ff8c00</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#9932cc', this)">
+            <div class="color-square" style="background-color: #9932cc;"></div>
+            <div class="color-info">
+                <div class="color-name">darkorchid</div>
+                <div class="color-hex">#9932cc</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#8b0000', this)">
+            <div class="color-square" style="background-color: #8b0000;"></div>
+            <div class="color-info">
+                <div class="color-name">darkred</div>
+                <div class="color-hex">#8b0000</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#e9967a', this)">
+            <div class="color-square" style="background-color: #e9967a;"></div>
+            <div class="color-info">
+                <div class="color-name">darksalmon</div>
+                <div class="color-hex">#e9967a</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#8fbc8f', this)">
+            <div class="color-square" style="background-color: #8fbc8f;"></div>
+            <div class="color-info">
+                <div class="color-name">darkseagreen</div>
+                <div class="color-hex">#8fbc8f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#483d8b', this)">
+            <div class="color-square" style="background-color: #483d8b;"></div>
+            <div class="color-info">
+                <div class="color-name">darkslateblue</div>
+                <div class="color-hex">#483d8b</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#2f4f4f', this)">
+            <div class="color-square" style="background-color: #2f4f4f;"></div>
+            <div class="color-info">
+                <div class="color-name">darkslategray</div>
+                <div class="color-hex">#2f4f4f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#2f4f4f', this)">
+            <div class="color-square" style="background-color: #2f4f4f;"></div>
+            <div class="color-info">
+                <div class="color-name">darkslategrey</div>
+                <div class="color-hex">#2f4f4f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00ced1', this)">
+            <div class="color-square" style="background-color: #00ced1;"></div>
+            <div class="color-info">
+                <div class="color-name">darkturquoise</div>
+                <div class="color-hex">#00ced1</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#9400d3', this)">
+            <div class="color-square" style="background-color: #9400d3;"></div>
+            <div class="color-info">
+                <div class="color-name">darkviolet</div>
+                <div class="color-hex">#9400d3</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff1493', this)">
+            <div class="color-square" style="background-color: #ff1493;"></div>
+            <div class="color-info">
+                <div class="color-name">deeppink</div>
+                <div class="color-hex">#ff1493</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00bfff', this)">
+            <div class="color-square" style="background-color: #00bfff;"></div>
+            <div class="color-info">
+                <div class="color-name">deepskyblue</div>
+                <div class="color-hex">#00bfff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#696969', this)">
+            <div class="color-square" style="background-color: #696969;"></div>
+            <div class="color-info">
+                <div class="color-name">dimgray</div>
+                <div class="color-hex">#696969</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#696969', this)">
+            <div class="color-square" style="background-color: #696969;"></div>
+            <div class="color-info">
+                <div class="color-name">dimgrey</div>
+                <div class="color-hex">#696969</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#1e90ff', this)">
+            <div class="color-square" style="background-color: #1e90ff;"></div>
+            <div class="color-info">
+                <div class="color-name">dodgerblue</div>
+                <div class="color-hex">#1e90ff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#b22222', this)">
+            <div class="color-square" style="background-color: #b22222;"></div>
+            <div class="color-info">
+                <div class="color-name">firebrick</div>
+                <div class="color-hex">#b22222</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fffaf0', this)">
+            <div class="color-square" style="background-color: #fffaf0;"></div>
+            <div class="color-info">
+                <div class="color-name">floralwhite</div>
+                <div class="color-hex">#fffaf0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#228b22', this)">
+            <div class="color-square" style="background-color: #228b22;"></div>
+            <div class="color-info">
+                <div class="color-name">forestgreen</div>
+                <div class="color-hex">#228b22</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff00ff', this)">
+            <div class="color-square" style="background-color: #ff00ff;"></div>
+            <div class="color-info">
+                <div class="color-name">fuchsia</div>
+                <div class="color-hex">#ff00ff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#dcdcdc', this)">
+            <div class="color-square" style="background-color: #dcdcdc;"></div>
+            <div class="color-info">
+                <div class="color-name">gainsboro</div>
+                <div class="color-hex">#dcdcdc</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f8f8ff', this)">
+            <div class="color-square" style="background-color: #f8f8ff;"></div>
+            <div class="color-info">
+                <div class="color-name">ghostwhite</div>
+                <div class="color-hex">#f8f8ff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffd700', this)">
+            <div class="color-square" style="background-color: #ffd700;"></div>
+            <div class="color-info">
+                <div class="color-name">gold</div>
+                <div class="color-hex">#ffd700</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#daa520', this)">
+            <div class="color-square" style="background-color: #daa520;"></div>
+            <div class="color-info">
+                <div class="color-name">goldenrod</div>
+                <div class="color-hex">#daa520</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#808080', this)">
+            <div class="color-square" style="background-color: #808080;"></div>
+            <div class="color-info">
+                <div class="color-name">gray</div>
+                <div class="color-hex">#808080</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#008000', this)">
+            <div class="color-square" style="background-color: #008000;"></div>
+            <div class="color-info">
+                <div class="color-name">green</div>
+                <div class="color-hex">#008000</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#adff2f', this)">
+            <div class="color-square" style="background-color: #adff2f;"></div>
+            <div class="color-info">
+                <div class="color-name">greenyellow</div>
+                <div class="color-hex">#adff2f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#808080', this)">
+            <div class="color-square" style="background-color: #808080;"></div>
+            <div class="color-info">
+                <div class="color-name">grey</div>
+                <div class="color-hex">#808080</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f0fff0', this)">
+            <div class="color-square" style="background-color: #f0fff0;"></div>
+            <div class="color-info">
+                <div class="color-name">honeydew</div>
+                <div class="color-hex">#f0fff0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff69b4', this)">
+            <div class="color-square" style="background-color: #ff69b4;"></div>
+            <div class="color-info">
+                <div class="color-name">hotpink</div>
+                <div class="color-hex">#ff69b4</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#cd5c5c', this)">
+            <div class="color-square" style="background-color: #cd5c5c;"></div>
+            <div class="color-info">
+                <div class="color-name">indianred</div>
+                <div class="color-hex">#cd5c5c</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#4b0082', this)">
+            <div class="color-square" style="background-color: #4b0082;"></div>
+            <div class="color-info">
+                <div class="color-name">indigo</div>
+                <div class="color-hex">#4b0082</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fffff0', this)">
+            <div class="color-square" style="background-color: #fffff0;"></div>
+            <div class="color-info">
+                <div class="color-name">ivory</div>
+                <div class="color-hex">#fffff0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f0e68c', this)">
+            <div class="color-square" style="background-color: #f0e68c;"></div>
+            <div class="color-info">
+                <div class="color-name">khaki</div>
+                <div class="color-hex">#f0e68c</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#e6e6fa', this)">
+            <div class="color-square" style="background-color: #e6e6fa;"></div>
+            <div class="color-info">
+                <div class="color-name">lavender</div>
+                <div class="color-hex">#e6e6fa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fff0f5', this)">
+            <div class="color-square" style="background-color: #fff0f5;"></div>
+            <div class="color-info">
+                <div class="color-name">lavenderblush</div>
+                <div class="color-hex">#fff0f5</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#7cfc00', this)">
+            <div class="color-square" style="background-color: #7cfc00;"></div>
+            <div class="color-info">
+                <div class="color-name">lawngreen</div>
+                <div class="color-hex">#7cfc00</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fffacd', this)">
+            <div class="color-square" style="background-color: #fffacd;"></div>
+            <div class="color-info">
+                <div class="color-name">lemonchiffon</div>
+                <div class="color-hex">#fffacd</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#add8e6', this)">
+            <div class="color-square" style="background-color: #add8e6;"></div>
+            <div class="color-info">
+                <div class="color-name">lightblue</div>
+                <div class="color-hex">#add8e6</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f08080', this)">
+            <div class="color-square" style="background-color: #f08080;"></div>
+            <div class="color-info">
+                <div class="color-name">lightcoral</div>
+                <div class="color-hex">#f08080</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#e0ffff', this)">
+            <div class="color-square" style="background-color: #e0ffff;"></div>
+            <div class="color-info">
+                <div class="color-name">lightcyan</div>
+                <div class="color-hex">#e0ffff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fafad2', this)">
+            <div class="color-square" style="background-color: #fafad2;"></div>
+            <div class="color-info">
+                <div class="color-name">lightgoldenrodyellow</div>
+                <div class="color-hex">#fafad2</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#d3d3d3', this)">
+            <div class="color-square" style="background-color: #d3d3d3;"></div>
+            <div class="color-info">
+                <div class="color-name">lightgray</div>
+                <div class="color-hex">#d3d3d3</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#90ee90', this)">
+            <div class="color-square" style="background-color: #90ee90;"></div>
+            <div class="color-info">
+                <div class="color-name">lightgreen</div>
+                <div class="color-hex">#90ee90</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#d3d3d3', this)">
+            <div class="color-square" style="background-color: #d3d3d3;"></div>
+            <div class="color-info">
+                <div class="color-name">lightgrey</div>
+                <div class="color-hex">#d3d3d3</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffb6c1', this)">
+            <div class="color-square" style="background-color: #ffb6c1;"></div>
+            <div class="color-info">
+                <div class="color-name">lightpink</div>
+                <div class="color-hex">#ffb6c1</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffa07a', this)">
+            <div class="color-square" style="background-color: #ffa07a;"></div>
+            <div class="color-info">
+                <div class="color-name">lightsalmon</div>
+                <div class="color-hex">#ffa07a</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#20b2aa', this)">
+            <div class="color-square" style="background-color: #20b2aa;"></div>
+            <div class="color-info">
+                <div class="color-name">lightseagreen</div>
+                <div class="color-hex">#20b2aa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#87cefa', this)">
+            <div class="color-square" style="background-color: #87cefa;"></div>
+            <div class="color-info">
+                <div class="color-name">lightskyblue</div>
+                <div class="color-hex">#87cefa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#778899', this)">
+            <div class="color-square" style="background-color: #778899;"></div>
+            <div class="color-info">
+                <div class="color-name">lightslategray</div>
+                <div class="color-hex">#778899</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#778899', this)">
+            <div class="color-square" style="background-color: #778899;"></div>
+            <div class="color-info">
+                <div class="color-name">lightslategrey</div>
+                <div class="color-hex">#778899</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#b0c4de', this)">
+            <div class="color-square" style="background-color: #b0c4de;"></div>
+            <div class="color-info">
+                <div class="color-name">lightsteelblue</div>
+                <div class="color-hex">#b0c4de</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffffe0', this)">
+            <div class="color-square" style="background-color: #ffffe0;"></div>
+            <div class="color-info">
+                <div class="color-name">lightyellow</div>
+                <div class="color-hex">#ffffe0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00ff00', this)">
+            <div class="color-square" style="background-color: #00ff00;"></div>
+            <div class="color-info">
+                <div class="color-name">lime</div>
+                <div class="color-hex">#00ff00</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#32cd32', this)">
+            <div class="color-square" style="background-color: #32cd32;"></div>
+            <div class="color-info">
+                <div class="color-name">limegreen</div>
+                <div class="color-hex">#32cd32</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#faf0e6', this)">
+            <div class="color-square" style="background-color: #faf0e6;"></div>
+            <div class="color-info">
+                <div class="color-name">linen</div>
+                <div class="color-hex">#faf0e6</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff00ff', this)">
+            <div class="color-square" style="background-color: #ff00ff;"></div>
+            <div class="color-info">
+                <div class="color-name">magenta</div>
+                <div class="color-hex">#ff00ff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#800000', this)">
+            <div class="color-square" style="background-color: #800000;"></div>
+            <div class="color-info">
+                <div class="color-name">maroon</div>
+                <div class="color-hex">#800000</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#66cdaa', this)">
+            <div class="color-square" style="background-color: #66cdaa;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumaquamarine</div>
+                <div class="color-hex">#66cdaa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#0000cd', this)">
+            <div class="color-square" style="background-color: #0000cd;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumblue</div>
+                <div class="color-hex">#0000cd</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ba55d3', this)">
+            <div class="color-square" style="background-color: #ba55d3;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumorchid</div>
+                <div class="color-hex">#ba55d3</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#9370db', this)">
+            <div class="color-square" style="background-color: #9370db;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumpurple</div>
+                <div class="color-hex">#9370db</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#3cb371', this)">
+            <div class="color-square" style="background-color: #3cb371;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumseagreen</div>
+                <div class="color-hex">#3cb371</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#7b68ee', this)">
+            <div class="color-square" style="background-color: #7b68ee;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumslateblue</div>
+                <div class="color-hex">#7b68ee</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00fa9a', this)">
+            <div class="color-square" style="background-color: #00fa9a;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumspringgreen</div>
+                <div class="color-hex">#00fa9a</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#48d1cc', this)">
+            <div class="color-square" style="background-color: #48d1cc;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumturquoise</div>
+                <div class="color-hex">#48d1cc</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#c71585', this)">
+            <div class="color-square" style="background-color: #c71585;"></div>
+            <div class="color-info">
+                <div class="color-name">mediumvioletred</div>
+                <div class="color-hex">#c71585</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#191970', this)">
+            <div class="color-square" style="background-color: #191970;"></div>
+            <div class="color-info">
+                <div class="color-name">midnightblue</div>
+                <div class="color-hex">#191970</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f5fffa', this)">
+            <div class="color-square" style="background-color: #f5fffa;"></div>
+            <div class="color-info">
+                <div class="color-name">mintcream</div>
+                <div class="color-hex">#f5fffa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffe4e1', this)">
+            <div class="color-square" style="background-color: #ffe4e1;"></div>
+            <div class="color-info">
+                <div class="color-name">mistyrose</div>
+                <div class="color-hex">#ffe4e1</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffe4b5', this)">
+            <div class="color-square" style="background-color: #ffe4b5;"></div>
+            <div class="color-info">
+                <div class="color-name">moccasin</div>
+                <div class="color-hex">#ffe4b5</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffdead', this)">
+            <div class="color-square" style="background-color: #ffdead;"></div>
+            <div class="color-info">
+                <div class="color-name">navajowhite</div>
+                <div class="color-hex">#ffdead</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#000080', this)">
+            <div class="color-square" style="background-color: #000080;"></div>
+            <div class="color-info">
+                <div class="color-name">navy</div>
+                <div class="color-hex">#000080</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fdf5e6', this)">
+            <div class="color-square" style="background-color: #fdf5e6;"></div>
+            <div class="color-info">
+                <div class="color-name">oldlace</div>
+                <div class="color-hex">#fdf5e6</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#808000', this)">
+            <div class="color-square" style="background-color: #808000;"></div>
+            <div class="color-info">
+                <div class="color-name">olive</div>
+                <div class="color-hex">#808000</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#6b8e23', this)">
+            <div class="color-square" style="background-color: #6b8e23;"></div>
+            <div class="color-info">
+                <div class="color-name">olivedrab</div>
+                <div class="color-hex">#6b8e23</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffa500', this)">
+            <div class="color-square" style="background-color: #ffa500;"></div>
+            <div class="color-info">
+                <div class="color-name">orange</div>
+                <div class="color-hex">#ffa500</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff4500', this)">
+            <div class="color-square" style="background-color: #ff4500;"></div>
+            <div class="color-info">
+                <div class="color-name">orangered</div>
+                <div class="color-hex">#ff4500</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#da70d6', this)">
+            <div class="color-square" style="background-color: #da70d6;"></div>
+            <div class="color-info">
+                <div class="color-name">orchid</div>
+                <div class="color-hex">#da70d6</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#eee8aa', this)">
+            <div class="color-square" style="background-color: #eee8aa;"></div>
+            <div class="color-info">
+                <div class="color-name">palegoldenrod</div>
+                <div class="color-hex">#eee8aa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#98fb98', this)">
+            <div class="color-square" style="background-color: #98fb98;"></div>
+            <div class="color-info">
+                <div class="color-name">palegreen</div>
+                <div class="color-hex">#98fb98</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#afeeee', this)">
+            <div class="color-square" style="background-color: #afeeee;"></div>
+            <div class="color-info">
+                <div class="color-name">paleturquoise</div>
+                <div class="color-hex">#afeeee</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#db7093', this)">
+            <div class="color-square" style="background-color: #db7093;"></div>
+            <div class="color-info">
+                <div class="color-name">palevioletred</div>
+                <div class="color-hex">#db7093</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffefd5', this)">
+            <div class="color-square" style="background-color: #ffefd5;"></div>
+            <div class="color-info">
+                <div class="color-name">papayawhip</div>
+                <div class="color-hex">#ffefd5</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffdab9', this)">
+            <div class="color-square" style="background-color: #ffdab9;"></div>
+            <div class="color-info">
+                <div class="color-name">peachpuff</div>
+                <div class="color-hex">#ffdab9</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#cd853f', this)">
+            <div class="color-square" style="background-color: #cd853f;"></div>
+            <div class="color-info">
+                <div class="color-name">peru</div>
+                <div class="color-hex">#cd853f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffc0cb', this)">
+            <div class="color-square" style="background-color: #ffc0cb;"></div>
+            <div class="color-info">
+                <div class="color-name">pink</div>
+                <div class="color-hex">#ffc0cb</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#dda0dd', this)">
+            <div class="color-square" style="background-color: #dda0dd;"></div>
+            <div class="color-info">
+                <div class="color-name">plum</div>
+                <div class="color-hex">#dda0dd</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#b0e0e6', this)">
+            <div class="color-square" style="background-color: #b0e0e6;"></div>
+            <div class="color-info">
+                <div class="color-name">powderblue</div>
+                <div class="color-hex">#b0e0e6</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#800080', this)">
+            <div class="color-square" style="background-color: #800080;"></div>
+            <div class="color-info">
+                <div class="color-name">purple</div>
+                <div class="color-hex">#800080</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff0000', this)">
+            <div class="color-square" style="background-color: #ff0000;"></div>
+            <div class="color-info">
+                <div class="color-name">red</div>
+                <div class="color-hex">#ff0000</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#bc8f8f', this)">
+            <div class="color-square" style="background-color: #bc8f8f;"></div>
+            <div class="color-info">
+                <div class="color-name">rosybrown</div>
+                <div class="color-hex">#bc8f8f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#4169e1', this)">
+            <div class="color-square" style="background-color: #4169e1;"></div>
+            <div class="color-info">
+                <div class="color-name">royalblue</div>
+                <div class="color-hex">#4169e1</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#8b4513', this)">
+            <div class="color-square" style="background-color: #8b4513;"></div>
+            <div class="color-info">
+                <div class="color-name">saddlebrown</div>
+                <div class="color-hex">#8b4513</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fa8072', this)">
+            <div class="color-square" style="background-color: #fa8072;"></div>
+            <div class="color-info">
+                <div class="color-name">salmon</div>
+                <div class="color-hex">#fa8072</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f4a460', this)">
+            <div class="color-square" style="background-color: #f4a460;"></div>
+            <div class="color-info">
+                <div class="color-name">sandybrown</div>
+                <div class="color-hex">#f4a460</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#2e8b57', this)">
+            <div class="color-square" style="background-color: #2e8b57;"></div>
+            <div class="color-info">
+                <div class="color-name">seagreen</div>
+                <div class="color-hex">#2e8b57</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fff5ee', this)">
+            <div class="color-square" style="background-color: #fff5ee;"></div>
+            <div class="color-info">
+                <div class="color-name">seashell</div>
+                <div class="color-hex">#fff5ee</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#a0522d', this)">
+            <div class="color-square" style="background-color: #a0522d;"></div>
+            <div class="color-info">
+                <div class="color-name">sienna</div>
+                <div class="color-hex">#a0522d</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#c0c0c0', this)">
+            <div class="color-square" style="background-color: #c0c0c0;"></div>
+            <div class="color-info">
+                <div class="color-name">silver</div>
+                <div class="color-hex">#c0c0c0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#87ceeb', this)">
+            <div class="color-square" style="background-color: #87ceeb;"></div>
+            <div class="color-info">
+                <div class="color-name">skyblue</div>
+                <div class="color-hex">#87ceeb</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#6a5acd', this)">
+            <div class="color-square" style="background-color: #6a5acd;"></div>
+            <div class="color-info">
+                <div class="color-name">slateblue</div>
+                <div class="color-hex">#6a5acd</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#708090', this)">
+            <div class="color-square" style="background-color: #708090;"></div>
+            <div class="color-info">
+                <div class="color-name">slategray</div>
+                <div class="color-hex">#708090</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#708090', this)">
+            <div class="color-square" style="background-color: #708090;"></div>
+            <div class="color-info">
+                <div class="color-name">slategrey</div>
+                <div class="color-hex">#708090</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#fffafa', this)">
+            <div class="color-square" style="background-color: #fffafa;"></div>
+            <div class="color-info">
+                <div class="color-name">snow</div>
+                <div class="color-hex">#fffafa</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#00ff7f', this)">
+            <div class="color-square" style="background-color: #00ff7f;"></div>
+            <div class="color-info">
+                <div class="color-name">springgreen</div>
+                <div class="color-hex">#00ff7f</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#4682b4', this)">
+            <div class="color-square" style="background-color: #4682b4;"></div>
+            <div class="color-info">
+                <div class="color-name">steelblue</div>
+                <div class="color-hex">#4682b4</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#d2b48c', this)">
+            <div class="color-square" style="background-color: #d2b48c;"></div>
+            <div class="color-info">
+                <div class="color-name">tan</div>
+                <div class="color-hex">#d2b48c</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#008080', this)">
+            <div class="color-square" style="background-color: #008080;"></div>
+            <div class="color-info">
+                <div class="color-name">teal</div>
+                <div class="color-hex">#008080</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#d8bfd8', this)">
+            <div class="color-square" style="background-color: #d8bfd8;"></div>
+            <div class="color-info">
+                <div class="color-name">thistle</div>
+                <div class="color-hex">#d8bfd8</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ff6347', this)">
+            <div class="color-square" style="background-color: #ff6347;"></div>
+            <div class="color-info">
+                <div class="color-name">tomato</div>
+                <div class="color-hex">#ff6347</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#40e0d0', this)">
+            <div class="color-square" style="background-color: #40e0d0;"></div>
+            <div class="color-info">
+                <div class="color-name">turquoise</div>
+                <div class="color-hex">#40e0d0</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ee82ee', this)">
+            <div class="color-square" style="background-color: #ee82ee;"></div>
+            <div class="color-info">
+                <div class="color-name">violet</div>
+                <div class="color-hex">#ee82ee</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f5deb3', this)">
+            <div class="color-square" style="background-color: #f5deb3;"></div>
+            <div class="color-info">
+                <div class="color-name">wheat</div>
+                <div class="color-hex">#f5deb3</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffffff', this)">
+            <div class="color-square" style="background-color: #ffffff;"></div>
+            <div class="color-info">
+                <div class="color-name">white</div>
+                <div class="color-hex">#ffffff</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#f5f5f5', this)">
+            <div class="color-square" style="background-color: #f5f5f5;"></div>
+            <div class="color-info">
+                <div class="color-name">whitesmoke</div>
+                <div class="color-hex">#f5f5f5</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#ffff00', this)">
+            <div class="color-square" style="background-color: #ffff00;"></div>
+            <div class="color-info">
+                <div class="color-name">yellow</div>
+                <div class="color-hex">#ffff00</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('#9acd32', this)">
+            <div class="color-square" style="background-color: #9acd32;"></div>
+            <div class="color-info">
+                <div class="color-name">yellowgreen</div>
+                <div class="color-hex">#9acd32</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('rgba(0,0,0,0)', this)">
+            <div class="color-square" style="background-color: rgba(0,0,0,0); border: 1px solid #ddd;"></div>
+            <div class="color-info">
+                <div class="color-name">transparent</div>
+                <div class="color-hex">rgba(0,0,0,0)</div>
+            </div>
+            <div class="copied-message">Copied!</div>
+        </div>
+    </div>
+
+    <script>
+        function copyToClipboard(text, element) {
+            navigator.clipboard.writeText(text).then(() => {
+                showCopiedMessage(element);
+            }, (err) => {
+                console.error('Kopyalama başarısız: ', err);
+            });
+        }
+
+        function showCopiedMessage(element) {
+            const message = element.querySelector('.copied-message');
+            message.style.opacity = '1';
+            setTimeout(() => {
+                message.style.opacity = '0';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
