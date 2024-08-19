@@ -10,7 +10,7 @@
 			background-color: #161617;
             font-family: Arial, sans-serif;
             color: #333;
-            max-width: 1200px;
+            max-width: 1390px;
             margin: 0 auto;
             padding: 20px;
         }
@@ -33,7 +33,7 @@
         .color-item {
             display: inline-block;
             align-items: center;
-            background-color: #f9f9f9;
+            background-color: black;
             border-radius: 8px;
             padding: 10px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -54,7 +54,7 @@
         .color-square {
             width: 40px;
             height: 40px;
-            border: 2px solid #ddd;
+            border: 2px solid black;
             border-radius: 4px;
             margin-bottom: 5px;
             display: inline-block;
@@ -94,9 +94,67 @@
 <body>
 
     <!-- Grup Başlıkları ve Renkler -->
+	<hr/>
+
+    <!-- <h2 onclick="toggleGroup('grays')">Gri ve Nötr Tonlar</h2>-->
+    <!-- <div class="group" id="grays"> -->
+        <div class="color-item" onclick="copyToClipboard('gainsboro', this)">
+            <div class="color-square" style="background-color: #dcdcdc;"></div>
+            <div class="color-name">gainsboro</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('lightgray', this)">
+            <div class="color-square" style="background-color: #d3d3d3;"></div>
+            <div class="color-name">lightgray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('silver', this)">
+            <div class="color-square" style="background-color: #c0c0c0;"></div>
+            <div class="color-name">silver</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkgray', this)">
+            <div class="color-square" style="background-color: #a9a9a9;"></div>
+            <div class="color-name">darkgray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('dimgray', this)">
+            <div class="color-square" style="background-color: #696969;"></div>
+            <div class="color-name">dimgray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('gray', this)">
+            <div class="color-square" style="background-color: #808080;"></div>
+            <div class="color-name">gray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('slategray', this)">
+            <div class="color-square" style="background-color: #708090;"></div>
+            <div class="color-name">slategray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkslategray', this)">
+            <div class="color-square" style="background-color: #2f4f4f;"></div>
+            <div class="color-name">darkslategray</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('black', this)">
+            <div class="color-square" style="background-color: #000000;"></div>
+            <div class="color-name">black</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+    <!-- </div> -->
+	<hr/>
+	
+	
     <!-- <h2 onclick="toggleGroup('whites')">Beyaz ve Açık Tonlar</h2>-->
-    <div class="group" id="whites">
-        <div class="color-item" onclick="copyToClipboard('whitesmoke', this)">
+    <!-- <div class="group" id="whites"> -->
+        <div class="color-item" onclick="copyToClipboard('white', this)">
+            <div class="color-square" style="background-color: white;"></div>
+            <div class="color-name">white</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+		<div class="color-item" onclick="copyToClipboard('whitesmoke', this)">
             <div class="color-square" style="background-color: #f5f5f5;"></div>
             <div class="color-name">whitesmoke</div>
             <div class="copied-message">Copied!</div>
@@ -151,10 +209,61 @@
             <div class="color-name">seashell</div>
             <div class="copied-message">Copied!</div>
         </div>
-    </div>
+    <!-- </div> -->
+	<hr/>
+
+    <!-- <h2 onclick="toggleGroup('oranges')">Turuncu ve Kahverengi Tonları</h2>-->
+    <!-- <div class="group" id="oranges"> -->
+        <div class="color-item" onclick="copyToClipboard('orange', this)">
+            <div class="color-square" style="background-color: #ffa500;"></div>
+            <div class="color-name">orange</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkorange', this)">
+            <div class="color-square" style="background-color: #ff8c00;"></div>
+            <div class="color-name">darkorange</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('chocolate', this)">
+            <div class="color-square" style="background-color: #d2691e;"></div>
+            <div class="color-name">chocolate</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('peru', this)">
+            <div class="color-square" style="background-color: #cd853f;"></div>
+            <div class="color-name">peru</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('saddlebrown', this)">
+            <div class="color-square" style="background-color: #8b4513;"></div>
+            <div class="color-name">saddlebrown</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('sienna', this)">
+            <div class="color-square" style="background-color: #a0522d;"></div>
+            <div class="color-name">sienna</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('brown', this)">
+            <div class="color-square" style="background-color: #a52a2a;"></div>
+            <div class="color-name">brown</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('burlywood', this)">
+            <div class="color-square" style="background-color: #deb887;"></div>
+            <div class="color-name">burlywood</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('tan', this)">
+            <div class="color-square" style="background-color: #d2b48c;"></div>
+            <div class="color-name">tan</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+    <!-- </div> -->
+	<hr/>
 
     <!-- <h2 onclick="toggleGroup('yellows')">Açık Sarı ve Bej Tonları</h2>-->
-    <div class="group" id="yellows">
+    <!-- <div class="group" id="yellows"> -->
         <div class="color-item" onclick="copyToClipboard('beige', this)">
             <div class="color-square" style="background-color: #f5f5dc;"></div>
             <div class="color-name">beige</div>
@@ -200,10 +309,11 @@
             <div class="color-name">wheat</div>
             <div class="copied-message">Copied!</div>
         </div>
-    </div>
+    <!-- </div> -->
+	<hr/>
 
     <!-- <h2 onclick="toggleGroup('reds')">Kırmızı ve Pembe Tonları</h2>-->
-    <div class="group" id="reds">
+    <!-- <div class="group" id="reds"> -->
         <div class="color-item" onclick="copyToClipboard('red', this)">
             <div class="color-square" style="background-color: #ff0000;"></div>
             <div class="color-name">red</div>
@@ -234,14 +344,27 @@
             <div class="color-name">lightsalmon</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('deeppink', this)">
-            <div class="color-square" style="background-color: #ff1493;"></div>
-            <div class="color-name">deeppink</div>
+        <div class="color-item" onclick="copyToClipboard('indianred', this)">
+            <div class="color-square" style="background-color: #cd5c5c;"></div>
+            <div class="color-name">indianred</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('hotpink', this)">
-            <div class="color-square" style="background-color: #ff69b4;"></div>
-            <div class="color-name">hotpink</div>
+        <div class="color-item" onclick="copyToClipboard('firebrick', this)">
+            <div class="color-square" style="background-color: #b22222;"></div>
+            <div class="color-name">firebrick</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkred', this)">
+            <div class="color-square" style="background-color: #8b0000;"></div>
+            <div class="color-name">darkred</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+	<hr/>
+	
+	
+        <div class="color-item" onclick="copyToClipboard('pink', this)">
+            <div class="color-square" style="background-color: #ffc0cb;"></div>
+            <div class="color-name">pink</div>
             <div class="copied-message">Copied!</div>
         </div>
         <div class="color-item" onclick="copyToClipboard('lightpink', this)">
@@ -249,9 +372,14 @@
             <div class="color-name">lightpink</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('pink', this)">
-            <div class="color-square" style="background-color: #ffc0cb;"></div>
-            <div class="color-name">pink</div>
+        <div class="color-item" onclick="copyToClipboard('hotpink', this)">
+            <div class="color-square" style="background-color: #ff69b4;"></div>
+            <div class="color-name">hotpink</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('deeppink', this)">
+            <div class="color-square" style="background-color: #ff1493;"></div>
+            <div class="color-name">deeppink</div>
             <div class="copied-message">Copied!</div>
         </div>
         <div class="color-item" onclick="copyToClipboard('palevioletred', this)">
@@ -269,30 +397,14 @@
             <div class="color-name">mistyrose</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('indianred', this)">
-            <div class="color-square" style="background-color: #cd5c5c;"></div>
-            <div class="color-name">indianred</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('firebrick', this)">
-            <div class="color-square" style="background-color: #b22222;"></div>
-            <div class="color-name">firebrick</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkred', this)">
-            <div class="color-square" style="background-color: #8b0000;"></div>
-            <div class="color-name">darkred</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('brown', this)">
-            <div class="color-square" style="background-color: #a52a2a;"></div>
-            <div class="color-name">brown</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-    </div>
+    <!-- </div> -->
+	<hr/>
+	
+	
+	
 
     <!-- <h2 onclick="toggleGroup('blues')">Mavi ve Mor Tonları</h2>-->
-    <div class="group" id="blues">
+    <!-- <div class="group" id="blues"> -->
         <div class="color-item" onclick="copyToClipboard('blue', this)">
             <div class="color-square" style="background-color: #0000ff;"></div>
             <div class="color-name">blue</div>
@@ -358,7 +470,19 @@
             <div class="color-name">royalblue</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('indigo', this)">
+	<hr/>
+	
+        <div class="color-item" onclick="copyToClipboard('purple', this)">
+            <div class="color-square" style="background-color: #800080;"></div>
+            <div class="color-name">purple</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkmagenta', this)">
+            <div class="color-square" style="background-color: #8b008b;"></div>
+            <div class="color-name">darkmagenta</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+		<div class="color-item" onclick="copyToClipboard('indigo', this)">
             <div class="color-square" style="background-color: #4b0082;"></div>
             <div class="color-name">indigo</div>
             <div class="copied-message">Copied!</div>
@@ -386,16 +510,6 @@
         <div class="color-item" onclick="copyToClipboard('darkorchid', this)">
             <div class="color-square" style="background-color: #9932cc;"></div>
             <div class="color-name">darkorchid</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkmagenta', this)">
-            <div class="color-square" style="background-color: #8b008b;"></div>
-            <div class="color-name">darkmagenta</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('purple', this)">
-            <div class="color-square" style="background-color: #800080;"></div>
-            <div class="color-name">purple</div>
             <div class="copied-message">Copied!</div>
         </div>
         <div class="color-item" onclick="copyToClipboard('mediumorchid', this)">
@@ -438,10 +552,36 @@
             <div class="color-name">lavenderblush</div>
             <div class="copied-message">Copied!</div>
         </div>
-    </div>
+    <!-- </div> -->
+	<hr/>
 
     <!-- <h2 onclick="toggleGroup('greens')">Yeşil ve Sarı Tonları</h2>-->
-    <div class="group" id="greens">
+    <!-- <div class="group" id="greens"> -->
+        <div class="color-item" onclick="copyToClipboard('green', this)">
+            <div class="color-square" style="background-color: #008000;"></div>
+            <div class="color-name">green</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkgreen', this)">
+            <div class="color-square" style="background-color: #006400;"></div>
+            <div class="color-name">darkgreen</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+		<div class="color-item" onclick="copyToClipboard('forestgreen', this)">
+            <div class="color-square" style="background-color: #228b22;"></div>
+            <div class="color-name">forestgreen</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('olivedrab', this)">
+            <div class="color-square" style="background-color: #6b8e23;"></div>
+            <div class="color-name">olivedrab</div>
+            <div class="copied-message">Copied!</div>
+        </div>
+        <div class="color-item" onclick="copyToClipboard('darkolivegreen', this)">
+            <div class="color-square" style="background-color: #556b2f;"></div>
+            <div class="color-name">darkolivegreen</div>
+            <div class="copied-message">Copied!</div>
+        </div>
         <div class="color-item" onclick="copyToClipboard('lime', this)">
             <div class="color-square" style="background-color: #00ff00;"></div>
             <div class="color-name">lime</div>
@@ -502,31 +642,7 @@
             <div class="color-name">seagreen</div>
             <div class="copied-message">Copied!</div>
         </div>
-        <div class="color-item" onclick="copyToClipboard('forestgreen', this)">
-            <div class="color-square" style="background-color: #228b22;"></div>
-            <div class="color-name">forestgreen</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('green', this)">
-            <div class="color-square" style="background-color: #008000;"></div>
-            <div class="color-name">green</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkgreen', this)">
-            <div class="color-square" style="background-color: #006400;"></div>
-            <div class="color-name">darkgreen</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('olivedrab', this)">
-            <div class="color-square" style="background-color: #6b8e23;"></div>
-            <div class="color-name">olivedrab</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkolivegreen', this)">
-            <div class="color-square" style="background-color: #556b2f;"></div>
-            <div class="color-name">darkolivegreen</div>
-            <div class="copied-message">Copied!</div>
-        </div>
+	<hr/>
         <div class="color-item" onclick="copyToClipboard('yellow', this)">
             <div class="color-square" style="background-color: #ffff00;"></div>
             <div class="color-name">yellow</div>
@@ -557,105 +673,8 @@
             <div class="color-name">darkkhaki</div>
             <div class="copied-message">Copied!</div>
         </div>
-    </div>
-
-    <!-- <h2 onclick="toggleGroup('oranges')">Turuncu ve Kahverengi Tonları</h2>-->
-    <div class="group" id="oranges">
-        <div class="color-item" onclick="copyToClipboard('orange', this)">
-            <div class="color-square" style="background-color: #ffa500;"></div>
-            <div class="color-name">orange</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkorange', this)">
-            <div class="color-square" style="background-color: #ff8c00;"></div>
-            <div class="color-name">darkorange</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('chocolate', this)">
-            <div class="color-square" style="background-color: #d2691e;"></div>
-            <div class="color-name">chocolate</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('peru', this)">
-            <div class="color-square" style="background-color: #cd853f;"></div>
-            <div class="color-name">peru</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('saddlebrown', this)">
-            <div class="color-square" style="background-color: #8b4513;"></div>
-            <div class="color-name">saddlebrown</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('sienna', this)">
-            <div class="color-square" style="background-color: #a0522d;"></div>
-            <div class="color-name">sienna</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('brown', this)">
-            <div class="color-square" style="background-color: #a52a2a;"></div>
-            <div class="color-name">brown</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('burlywood', this)">
-            <div class="color-square" style="background-color: #deb887;"></div>
-            <div class="color-name">burlywood</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('tan', this)">
-            <div class="color-square" style="background-color: #d2b48c;"></div>
-            <div class="color-name">tan</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-    </div>
-
-    <!-- <h2 onclick="toggleGroup('grays')">Gri ve Nötr Tonlar</h2>-->
-    <div class="group" id="grays">
-        <div class="color-item" onclick="copyToClipboard('gainsboro', this)">
-            <div class="color-square" style="background-color: #dcdcdc;"></div>
-            <div class="color-name">gainsboro</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('lightgray', this)">
-            <div class="color-square" style="background-color: #d3d3d3;"></div>
-            <div class="color-name">lightgray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('silver', this)">
-            <div class="color-square" style="background-color: #c0c0c0;"></div>
-            <div class="color-name">silver</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkgray', this)">
-            <div class="color-square" style="background-color: #a9a9a9;"></div>
-            <div class="color-name">darkgray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('dimgray', this)">
-            <div class="color-square" style="background-color: #696969;"></div>
-            <div class="color-name">dimgray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('gray', this)">
-            <div class="color-square" style="background-color: #808080;"></div>
-            <div class="color-name">gray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('slategray', this)">
-            <div class="color-square" style="background-color: #708090;"></div>
-            <div class="color-name">slategray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('darkslategray', this)">
-            <div class="color-square" style="background-color: #2f4f4f;"></div>
-            <div class="color-name">darkslategray</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-        <div class="color-item" onclick="copyToClipboard('black', this)">
-            <div class="color-square" style="background-color: #000000;"></div>
-            <div class="color-name">black</div>
-            <div class="copied-message">Copied!</div>
-        </div>
-    </div>
+    <!-- </div> -->	
+	<hr/>
 
     <script>
 		document.querySelectorAll('.group').forEach(group => {
